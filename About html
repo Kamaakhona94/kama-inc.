@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KAMA.INC - About Us</title>
+    <style>
+        body {
+            background-color: #0d1b2a;
+            background-image: url('https://www.transparenttextures.com/patterns/binary.png');
+            color: #e0e0e0;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #1a1a2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        }
+        h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px #000000;
+            margin-top: 0;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        a {
+            color: #00d4ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #00ffff;
+        }
+        .logo {
+            max-width: 250px;
+            margin: 20px auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="kama-inc-logo.png" alt="KAMA.INC Logo" class="logo" onerror="this.style.display='none';">
+        <h1>About KAMA.INC</h1>
+        <p>KAMA.INC is a premium web hosting and creation service founded to empower businesses with AI-driven solutions. We specialize in secure, SSL-protected hosting and customized websites built for your needs.</p>
+        <p>Our mission is to make web creation accessible, affordable, and innovative, using the latest AI technology to help you succeed online.</p>
+        <p><a href="index.html">Home</a> | <a href="services.html">Our Services</a></p>
+    </div>
+</body>
+</html>
