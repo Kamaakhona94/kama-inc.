@@ -1,0 +1,25 @@
+# Example: Simple Task Workflow
+def start_task():
+    print("Task started.")
+
+def process_data():
+    print("Processing data...")
+    # Simulate some work
+    return "Data processed successfully"
+
+def save_results(result):
+    print(f"Saving results: {result}")
+
+def end_task():
+    print("Task completed.")
+
+# Workflow execution
+def run_workflow():
+    start_task()
+    result = process_data()
+    save_results(result)
+    end_task()
+
+# Run the workflow
+if __name__ == "__main__":
+    run_workflow()
