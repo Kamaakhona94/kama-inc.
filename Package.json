@@ -1,0 +1,14 @@
+{
+  "name": "kama-inc",
+  "version": "1.0.0",
+  "description": "KAMA.INC - AI-driven web hosting and website creation",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "html-validate": "^7.0.0",
+    "stylelint": "^14.0.0"
+  }
+}
