@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAMA.INC - AI Web Hosting</title>
+  <style>
+    body {
+      background: #1a1a1a url('binary-pattern.png') repeat;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    header img {
+      width: 150px;
+    }
+    nav a {
+      color: #00d4ff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .login-form, .ai-process {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00d4ff;
+    }
+    .login-form input, .ai-process input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      background: #333;
+      color: #fff;
+    }
+    .login-form button, .ai-process button {
+      width: 100%;
+      padding: 10px;
+      background: #00d4ff;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    button:hover {
+      background: #ffd700;
+      box-shadow: 0 0 15px #ffd700;
+    }
+    .paywall {
+      text-align: center;
+      color: #ff4500;
+    }
+    @media (max-width: 600px) {
+      body { padding: 10px; }
+      .login-form, .ai-process { max-width: 100%; }
+    }
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #1a1a1a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #00d4ff;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ffd700;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="kama-inc-logo.png" alt="KAMA.INC Logo" width="150">
+    <nav>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <div class="login-form">
+    <h2>Admin Login</h2>
+    <input type="email" placeholder="Email (kamaakhona60@gmail.com)" required>
+    <input type="password" placeholder="Password" required>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="ai-process" id="aiProcess" style="display: none;">
+    <h2>AI Website Creation</h2>
+    <input type="text" id="userName" placeholder="Your Name" required>
+    <input type="email" id="userEmail" placeholder="Your Email" required>
+    <p id="welcomeMessage"></p>
+    <button onclick="buildWebsite()">Build Website Now</button>
+    <div id="paywall" class="paywall" style="display: none;">
+      <p>Premium features require payment via Payoneer. Contact admin for access.</p>
+    </div>
+  </div>
+
+  <script>
+    function login() {
+      const email = document.querySelector('input[type="email"]').value;
+      const password = document.querySelector('input[type="password"]').value;
+      if (email === 'kamaakhona60@gmail.com' && password === 'yourpassword') {
+        document.querySelector('.login-form').style.display = 'none';
+        document.getElementById('aiProcess').style.display = 'block';
+      } else {
+        alert('Invalid credentials');
+      }
+    }
+
+    function buildWebsite() {
+      const name = document.getElementById('userName').value;
+      const email = document.getElementById('userEmail').value;
+      document.getElementById('welcomeMessage').innerText = `Welcome, ${name}! Your website is being built. Check Google Drive links: [Placeholder1], [Placeholder2].`;
+      if (email !== 'kamaakhona60@gmail.com') {
+        document.getElementById('paywall').style.display = 'block';
+      }
+    }
+  </script>
+
+  <footer>
+    <p>Contact us: <input type="text" placeholder="Name"> <input type="email" placeholder="Email"> <input type="text" placeholder="Message"> <button>Send</button></p>
+    <p>Subscribe for updates: <input type="email" placeholder="Email"> <button>Notify Me</button></p>
+  </footer>
+</body>
+</html>
