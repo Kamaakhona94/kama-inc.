@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow Styling</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Container for workflow steps */
+        .workflow-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for each step */
+        .step {
+            background-color: #e0f7fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            background-color: #b2ebf2;
+            transform: scale(1.02);
+        }
+
+        /* Button styling */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="workflow-container">
+        <h1>Workflow Steps</h1>
+        <div class="step">Step 1: Start Task</div>
+        <div class="step">Step 2: Process Data</div>
+        <div class="step">Step 3: Save Results</div>
+        <button class="btn">Run Workflow</button>
+    </div>
+</body>
+</html>
